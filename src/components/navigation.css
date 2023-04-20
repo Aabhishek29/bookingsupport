@@ -1,0 +1,47 @@
+.nav-bar{
+    background-color: aliceblue;
+    display: inline-flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.navigation-title{
+    color: gray;
+    font-size: 26px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navigation-bar {
+    display: inline-flex;
+    list-style: none;
+    width: 40%;
+    justify-content: center;
+}
+
+.nav-item{
+    width: 25%;
+    text-align: center;
+}
+
+.navigation-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: gray;
+}
+
+.form-navigation-btn {
+    background-color: #3B79Ff;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    width: 10%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.form-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}

@@ -4,16 +4,14 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
-import Login from './components/Login';
+import Dashboard from './pages/Dashboard';
 
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path='/' element={< Login />}></Route>
-        <Route exact path='/dashboard' element={< Dashboard />}></Route>
+        <Route exact path='/' element={< Dashboard />}></Route>
       </Routes>
     </Router>
   );

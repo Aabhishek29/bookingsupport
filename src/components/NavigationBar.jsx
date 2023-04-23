@@ -14,15 +14,12 @@ const NavigationBar = () => {
 					<Link className="navigation-link" to="/projects">About us</Link>
 				</li>	
 				<li className="nav-item">
-					<Link className="navigation-link" to="/contact">FAQ</Link>
+					<Link className="navigation-link" to="/faq">FAQ</Link>
 				</li>
 				<li className="nav-item">
 					<Link className="navigation-link" to="/contact">Contact us</Link>
 				</li>
 			</ul>
-			<div className="form-navigation-btn">
-				<Link className="form-link">Join</Link>
-			</div>
 		</div>
 	)
 }

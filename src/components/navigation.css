@@ -1,7 +1,7 @@
 .nav-bar{
     background-color: white;
     display: inline-flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
 }
 

@@ -1,14 +1,14 @@
 .welcome-block {
     width: 100%;
     display: inline-flex;
-    background: #fff;
+    background: #E0F0FF;
 }
 
 .welcome-block-right {
     width: 50%;
     justify-content: center;
     text-align: center;
-    padding: 15px;
+    padding: 5rem;
 }
 
 .welcome-block-left {
@@ -20,11 +20,12 @@
 
 
 .welcome-text {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     font-family: 'Inika', serif;
     font-style: normal;
     line-height: 39px;
     font-weight: 400;
+    margin: 10px;
 }
 
 .welcome-text-site-name {
@@ -35,28 +36,120 @@
     line-height: 43px;
     padding: 15px;
     color: #FFB800;
+    margin: 10px;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-paragraph-block {
+    display: block;
+}
+
+.welcome-paragraph-div {
+    margin: 10px;
+}
+
+.welcome-paragraph {
+    font-family: 'Inika', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    color: #332C2C;
+}
+
+.welcome-button-desktop {
+    margin-top: 3.5rem;
+}
+
+.know-more-button-desktop {
+    background: #369FFF;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.welcome-button-mobile {
+    display: none;
 }
 
 @media only screen and (max-width: 900px) {
     .welcome-block {
-        width: 100vw;
+        width: 100%;
         display: block;
-        background: #E0F0FF;
     }
 
     .welcome-block-right {
-        width: 70%;
+        width: 100%;
+        padding: 0px;
         justify-content: center;
         text-align: center;
-        padding: 15px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .welcome-text {
+        font-size: 2.0rem;
+        font-family: 'Inika', serif;
+        font-style: normal;
+        line-height: 39px;
+        font-weight: 400;
+    }
+
+    .welcome-text-site-name {
+        font-family: 'Dancing Script', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 43px;
+        color: #FFB800;
+        text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     }
 
     .welcome-block-left {
         width: 100%;
         justify-content: center;
         text-align: center;
-        padding: 15px;
+        height: auto;
+        padding: 0px;
+        margin-top: 1.5rem;
     }
 
+    #welcome-icon {
+        width: 100%;
+    }
+
+    .welcome-paragraph {
+        font-family: 'Inika', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 42px;
+        color: #332C2C;
+    }
+
+    .welcome-paragraph-div {
+        margin: 4px;
+    }
+
+    .welcome-button-desktop {
+        display: none;
+    }
+    .welcome-button-mobile {
+        margin-top: 2.5rem;
+        display: inline-flex;
+    }
+    .know-more-button-mobile {
+        background: #369FFF;
+        padding: 15px;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }

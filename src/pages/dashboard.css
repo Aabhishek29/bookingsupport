@@ -1,3 +1,7 @@
+.dashboard {
+    background: #E0F0FF;
+}
+
 .welcome-block {
     width: 100%;
     display: inline-flex;
@@ -71,6 +75,10 @@
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+#welcome-icon {
+    width: 60%;
+    height: 100%;
+}
 
 .welcome-button-mobile {
     display: none;
@@ -103,7 +111,7 @@
         font-family: 'Dancing Script', serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 2.0rem;
         line-height: 43px;
         color: #FFB800;
         text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
@@ -119,7 +127,8 @@
     }
 
     #welcome-icon {
-        width: 100%;
+        width: 60%;
+        height: 50%;
     }
 
     .welcome-paragraph {

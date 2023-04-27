@@ -4,6 +4,7 @@ import './navigation.css'
 
 const NavigationBar = () => {
   return(
+	  <div className={'navigation'}>
 		<div className="nav-bar">
 			<header className="navigation-title">Bookingsupport.in</header>
 			<ul className="navigation-bar">
@@ -21,6 +22,7 @@ const NavigationBar = () => {
 				</li>
 			</ul>
 		</div>
+	  </div>
 	)
 }
 

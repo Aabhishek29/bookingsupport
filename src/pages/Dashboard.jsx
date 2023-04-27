@@ -35,6 +35,12 @@ const DashBoard = () => {
 				</div>
 			</div>
 			<KeyPointsView />
+			<div className={'join-now'}>
+				<header className={'join-now-text'}>We’re always here to work for you</header>
+				<div className={'join-now-div'}>
+					<Link className={'join-now-link'} to={'form'}>Join Us</Link>
+				</div>
+			</div>
 			<div>
 				<header>lower part</header>
 			</div>

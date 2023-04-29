@@ -8,5 +8,25 @@
 
 .key-point-header {
     color: #282c34;
-    font-size: 16px;
+    font-size: 26px;
+    margin-left: 10vw;
+}
+
+.key-point-div {
+    display: inline-flex;
+}
+
+.left-view {
+    width: 50%;
+}
+
+.right-view {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+#reception-img {
+    width: 40%;
+    height: 100%;
 }

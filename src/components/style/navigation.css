@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
 .nav-bar{
     background-color: white;
     display: inline-flex;
@@ -31,6 +32,10 @@
     color: gray;
 }
 
+.navigation-bar-list {
+    display: none;
+}
+
 .form-navigation-btn {
     background-color: #ddd;
     color: white;
@@ -48,7 +53,36 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .navigation-bar {
-        display: none;
+    .navigation {
+        display: flex;
+        margin: 1.5rem;
     }
+    .nav-bar {
+        display: block;
+        width: 100%;
+    }
+    .navigation-title{
+        color: gray;
+        font-size: 26px;
+        margin-top: 10px;
+        width: 70%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .navigation-bar-list {
+        display: block;
+        margin-top: 10px;
+        color: #282c34;
+    }
+    .nav-item {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .navigation-bar {
+        display: block;
+        width: 100%;
+        justify-content: left;
+        padding: 0px;
+    }
+
 }

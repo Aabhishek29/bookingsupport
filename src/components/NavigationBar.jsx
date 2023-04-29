@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './style/navigation.css'
+import './style/navigation.css';
+import { BsList } from 'react-icons/bs';
 // import Logo from '../assets/favicon.ico';
 
 const NavigationBar = () => {
@@ -24,6 +25,9 @@ const NavigationBar = () => {
 				</li>
 			</ul>
 		</div>
+		  <div className={"navigation-bar-list"}>
+			  <BsList fontSize={24} />
+		  </div>
 	  </div>
 	)
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import './KeyPointsView.css';
+import './style/KeyPointsView.css';
 
 const keyPointsView = () => {
     return(

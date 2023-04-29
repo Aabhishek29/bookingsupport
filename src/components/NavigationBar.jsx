@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './navigation.css'
+import './style/navigation.css'
+// import Logo from '../assets/favicon.ico';
 
 const NavigationBar = () => {
   return(
 	  <div className={'navigation'}>
 		<div className="nav-bar">
+			{/*<img id={'navigation-icon'} src={Logo} alt={'something went wrong'}/>*/}
 			<header className="navigation-title">Bookingsupport.in</header>
 			<ul className="navigation-bar">
 				<li className="nav-item">

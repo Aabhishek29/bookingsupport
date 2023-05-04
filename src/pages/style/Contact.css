@@ -1,5 +1,6 @@
 .contact {
     justify-content: center;
+    background: #E0F0FF;
 }
 
 .contact-us-header {
@@ -23,7 +24,7 @@
 }
 
 .contact-us-form {
-    margin: 5rem;
+    padding: 5rem;
 }
 
 .input-tag {
@@ -68,7 +69,7 @@
     }
 
     .contact-us-form {
-        margin: 0.5rem;
+        padding: 10px;
     }
 
     .contact-us-input {

@@ -125,6 +125,27 @@
  Join-Now White Belt Area CSS ending
  */
 
+.dashboard-lower-division {
+    padding: 3.5rem;
+}
+
+.dashboard-lower-division-header {
+    color: #369FFF;
+    font-size: 26px;
+}
+
+.dashboard-lower-division-discription {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dashboard-lower-division-discription-text {
+    font-size: 36px;
+}
+
+.dashboard-cards {
+    display: flex;
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -203,5 +224,8 @@
         text-decoration: none;
         border-radius: 10px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .dashboard-cards {
+        display: block;
     }
 }

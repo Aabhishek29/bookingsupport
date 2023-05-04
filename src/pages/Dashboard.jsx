@@ -3,6 +3,8 @@ import './style/dashboard.css';
 import Logo from '../assets/welcome_image_bookingsupport.png';
 import {Link} from "react-router-dom";
 import KeyPointsView from "../components/keyPointsView";
+import CardView from "../components/CardView";
+import companyData from './companyData.json';
 
 const DashBoard = () => {
   return(
@@ -32,14 +34,32 @@ const DashBoard = () => {
 				</div>
 			</div>
 			<KeyPointsView />
-			<div className={'join-now'}>
-				<header className={'join-now-text'}>We’re always here to work for you</header>
-				<div className={'join-now-div'}>
-					<Link className={'join-now-link'} to={'form'}>Join Us</Link>
+			{/*<div className={'join-now'}>*/}
+			{/*	<header className={'join-now-text'}>We’re always here to work for you</header>*/}
+			{/*	<div className={'join-now-div'}>*/}
+			{/*		<Link className={'join-now-link'} to={'form'}>Join Us</Link>*/}
+			{/*	</div>*/}
+			{/*</div>*/}
+			<div className={'dashboard-lower-division'}>
+				<header className={'dashboard-lower-division-header'}>Feedback</header>
+				<div className={'dashboard-lower-division-discription'}>
+					<label className={'dashboard-lower-division-discription-text'}>Many Hotels </label>
+					<label className={'dashboard-lower-division-discription-text'} style={{
+						color: '#ff9900',
+					}}>Chooses </label>
+					<label className={'dashboard-lower-division-discription-text'}>BookingSupport.in</label>
 				</div>
-			</div>
-			<div>
-				<header>lower part</header>
+				<div className={'dashboard-cards'}>
+					{companyData.data.map((data) => {
+						return(
+							<div style={{
+								margin: 10,
+							}}>
+							<CardView description={data.description} owner={data.owner} />
+							</div>
+						)
+					})}
+				</div>
 			</div>
 		</div>
   )

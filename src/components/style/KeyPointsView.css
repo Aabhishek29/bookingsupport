@@ -1,6 +1,6 @@
 .key-point-view {
     background: #FFFFFF;
-    margin: 1.5rem;
+    margin: 3.5rem;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     padding: 1.5rem;
     border-radius: 10px;
@@ -8,25 +8,79 @@
 
 .key-point-header {
     color: #282c34;
-    font-size: 26px;
-    margin-left: 10vw;
+    font-size: 32px;
+    margin-left: 20vw;
+    font-family: 'Dancing Script', serif;
+    font-weight: bold;
 }
 
 .key-point-div {
     display: inline-flex;
+    margin: 1.5rem;
 }
 
 .left-view {
     width: 50%;
+    padding-left: 3.5rem;
 }
 
-.right-view {
+.right-view-pc {
     width: 50%;
     justify-content: center;
     text-align: center;
 }
 
+.key-points {
+    padding: 15px;
+}
+
+.key-point-text {
+    padding: 5px;
+    font-size: 24px;
+}
+
 #reception-img {
     width: 40%;
     height: 100%;
+}
+
+.right-view-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .key-point-view {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+        padding: 0.5rem;
+        margin: 12px;
+        border-radius: 10px;
+    }
+    .key-point-header {
+        color: #282c34;
+        font-size: 1.5rem;
+        margin: 0px;
+        font-family: 'Dancing Script', serif;
+        font-weight: bold;
+    }
+    .key-point-div {
+        display: block;
+        margin: 10px;
+        
+    }
+    .right-view-pc {
+        display: none;
+    }
+    .right-view-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    #reception-img-mobile {
+        width: 80%;
+    }
+    .left-view {
+        width: 100%;
+        padding: 0px;
+    }
 }

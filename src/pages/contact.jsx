@@ -22,16 +22,16 @@ const Contact = () => {
                 <div className={'form-div'}>
                     <div className={'contact-us-input'}>
                         <div className={'contact-us-label'}>
-                            <label>Your Name</label>
+                            <label>Name</label>
                         </div>
-                        <input className={'input-tag'} type={'text'} placeholder={"Your name"} value={name}
+                        <input className={'input-tag'} type={'text'} placeholder={"Name"} value={name}
                            onChange={(e) => setName(e.target.value)} />
                     </div>
                     <div className={'contact-us-input'}>
                         <div className={'contact-us-label'}>
                             <label>Email Address</label>
                         </div>
-                        <input className={'input-tag'} type={'email'} placeholder={"Your name"} value={email}
+                        <input className={'input-tag'} type={'email'} placeholder={"Example@email.com"} value={email}
                            onChange={(e) => setEmail(e.target.value)} />
                     </div>
                 </div>
@@ -40,14 +40,14 @@ const Contact = () => {
                         <div className={'contact-us-label'}>
                             <label>Hotel Name</label>
                         </div>
-                        <input className={'input-tag'} type={'text'} placeholder={"Your name"} value={hotelName}
+                        <input className={'input-tag'} type={'text'} placeholder={"Hotel Name"} value={hotelName}
                                onChange={(e) => setHotelName(e.target.value)} />
                     </div>
                     <div className={'contact-us-input'}>
                         <div className={'contact-us-label'}>
                             <label>Contact Number</label>
                         </div>
-                        <input className={'input-tag'} type={'number'} placeholder={"Your name"} value={phone}
+                        <input className={'input-tag'} type={'number'} placeholder={"00000-00000"} value={phone}
                                onChange={(e) => setPhone(e.target.value)} />
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                     <div className={'contact-us-label'}>
                         <label>Message</label>
                     </div>
-                    <textarea rows={10} className={'textarea-tag'} placeholder={"Your name"} value={message}
+                    <textarea rows={10} className={'textarea-tag'} placeholder={"Message..."} value={message}
                            onChange={(e) => setMessage(e.target.value)} />
                 </div>
                 <button className={'form-submit-button'} type={'submit'} >Send Enquiry</button>

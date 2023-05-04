@@ -45,14 +45,30 @@ const Footer = () => {
                         <div className={'footer-contact-us-icon'}>
                             <AiTwotonePhone stroke="white" color="white" fontSize={20}/>
                         </div>
-                        <label>+91-72518-75859</label>
+                        <div>
+                            <div style={{
+                                padding: 2
+                            }}>
+                                <label>+91 9548111813</label>
+                            </div>
+                            <div style={{
+                                padding: 2
+                            }}>
+                                <label>+91 1353152734</label>
+                            </div>
+                            <div style={{
+                                padding: 2
+                            }}>
+                                <label>+91 7251875859</label>
+                            </div>
+                        </div>
                     </div>
                     <br></br>
                     <div className={'footer-contact-us-div'}>
                         <div className={'footer-contact-us-icon'}>
                             <GrMail stroke="white" color="white" fontSize={20}/>
                         </div>
-                        <label color={'#ababab'}>BookingSupport@gmail.com</label>
+                        <label color={'#ababab'}>sigupbooking@gmail.com</label>
                     </div>
                 </div>
             </div>
@@ -72,6 +88,9 @@ const Footer = () => {
                         <GrMail stroke="white" color="white" fontSize={30}/>
                     </a>
                 </div>
+            </div>
+            <div className={'footer-copyright-div'}>
+                <p>© All rights reseved, BookingSupport.in 2019 - 2023.</p>
             </div>
         </div>
     )

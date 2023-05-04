@@ -17,7 +17,15 @@ import Form from "./pages/form";
 function App() {
   return (
     <Router>
-        <NavigationBar />
+        {/*<div style={{*/}
+        {/*    position: 'fixed',*/}
+        {/*    width: '100%'*/}
+        {/*}}>*/}
+            <NavigationBar />
+        {/*</div>*/}
+        {/*<div style={{*/}
+        {/*    paddingTop: 50*/}
+        {/*}}>*/}
         <Routes>
           <Route exact path='/' element={< Dashboard />}></Route>
           <Route exact path='/about' element={< About />}></Route>
@@ -25,6 +33,7 @@ function App() {
           <Route exact path='/contact' element={< Contact />}></Route>
           <Route exact path='/form' element={< Form />}></Route>
         </Routes>
+        {/*</div>*/}
         <Footer />
     </Router>
   );

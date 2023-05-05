@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+.navigation {
+    width: 100%;
+}
 .nav-bar{
     background-color: white;
     display: inline-flex;

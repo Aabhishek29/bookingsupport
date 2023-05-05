@@ -2,6 +2,8 @@ import React from 'react';
 import './style/faq.css';
 import Logo from '../assets/faq.png';
 import Icon from '../assets/iiicon.png';
+import companyData from "./companyData.json";
+import QuestionView from "../components/QuestionView";
 
 const Faq = () => {
     return (
@@ -25,7 +27,36 @@ const Faq = () => {
                 </div>
             </div>
             <div className={'faq-question-section'}>
-                <header className={'question-first-section'}>FAQ for Booking support.com services</header>
+                <div>
+                    <header className={'question-first-section'}>FAQ for Booking support.com services</header>
+                    <div>
+                        {companyData.questionQuery.map((data) => {
+                            return(
+                                <div style={{
+                                    marginTop: 50,
+                                }}>
+                                    <QuestionView question={data.question} answer={data.answer}/>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+                <div style={{
+                    marginTop: 50
+                }}>
+                    <header className={'question-first-section'}>FAQs for online travel agency management services</header>
+                    <div>
+                        {companyData.questionQuery.map((data) => {
+                            return(
+                                <div style={{
+                                    marginTop: 50,
+                                }}>
+                                    <QuestionView question={data.question} answer={data.answer}/>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
             </div>
         </div>
     )

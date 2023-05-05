@@ -1,7 +1,7 @@
 .question-frame {
     background: white;
-    width: 100%;
-    padding: 1.5rem;
+    width: 95%;
+    padding: 2rem;
     border-radius: 15px;
     box-shadow: 0px 0px 5px 5px #CBCBCB;
 }
@@ -18,4 +18,21 @@
 .question-asked {
     font-size: 18px;
     font-weight: 500;
+}
+
+.question-plus {
+    margin: 5px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 900px) {
+    .question-frame {
+        padding: 10px;
+    }
+    .faq-section {
+        display: block;
+    }
+    .faq-introduction-div-description-text {
+
+    }
 }

@@ -52,6 +52,18 @@
     color: rgb(255, 255, 255);
 }
 
+.join-now-button {
+    background: #0087ff;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);;
+}
+
 @media only screen and (max-width: 900px) {
     .navigation {
         display: flex;
@@ -84,5 +96,10 @@
         justify-content: left;
         padding: 0px;
     }
-
+    .navigation-bar-pc {
+        display: none;
+    }
+    #join-us-button {
+        display: none;
+    }
 }

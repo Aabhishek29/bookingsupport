@@ -36,6 +36,9 @@ class NavigationBar extends React.Component{
 							<li className="nav-item">
 								<Link className="navigation-link" to="/contact">Contact us</Link>
 							</li>
+							<l1 className="nav-item" id="join-us-button" >
+								<Link className={'join-now-button'} to='/form'>Join Us</Link>
+							</l1>
 						</ul>
 					)}
 				</div>

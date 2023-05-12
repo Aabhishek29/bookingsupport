@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import KeyPointsView from "../components/keyPointsView";
 import CardView from "../components/CardView";
 import companyData from './companyData.json';
+import JoinUsBoard from "../components/joinUsBoard";
 
 const DashBoard = () => {
   return(
@@ -34,12 +35,7 @@ const DashBoard = () => {
 				</div>
 			</div>
 			<KeyPointsView />
-			{/*<div className={'join-now'}>*/}
-			{/*	<header className={'join-now-text'}>We’re always here to work for you</header>*/}
-			{/*	<div className={'join-now-div'}>*/}
-			{/*		<Link className={'join-now-link'} to={'form'}>Join Us</Link>*/}
-			{/*	</div>*/}
-			{/*</div>*/}
+			<JoinUsBoard context={'We’re always here to work for you'} />
 			<div className={'dashboard-lower-division'}>
 				<header className={'dashboard-lower-division-header'}>Feedback</header>
 				<div className={'dashboard-lower-division-discription'}>

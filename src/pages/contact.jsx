@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from 'react';
 import './style/Contact.css';
-import Icon from "../assets/iiicon.png";
-import Logo from "../assets/faq.png";
+import Icon from "../assets/contact_us.png";
+import Logo from "../assets/contact_us_intro.png";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -31,7 +31,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className={'image-section'}>
-                        <img className={'image-logo'} src={Logo} alt={'something went wrong'}/>
+                        <img className={'image-logo'} id={'contact-us-image'} src={Logo} alt={'something went wrong'}/>
                     </div>
                 </div>
             </div>

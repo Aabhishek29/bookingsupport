@@ -57,6 +57,10 @@
     border-radius: 5px;
 }
 
+#contact-us-image {
+    width: 350px;
+}
+
 @media only screen and (max-width: 900px) {
     .form-div {
         display: block;

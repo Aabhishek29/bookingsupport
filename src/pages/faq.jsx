@@ -34,7 +34,7 @@ const Faq = () => {
                             return(
                                 <div style={{
                                     marginTop: 50,
-                                }}>
+                                }} >
                                     <QuestionView question={data.question} answer={data.answer}/>
                                 </div>
                             )

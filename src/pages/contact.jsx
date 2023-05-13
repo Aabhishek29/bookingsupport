@@ -22,8 +22,8 @@ const Contact = () => {
                 <div className={'faq-section'}>
                     <div className={'faq-introduction-div-description'}>
                         <label className={'faq-introduction-div-description-text'}>
-                            You’re welcome to shoot us a question about anything at all. Before you write, please
-                            see FAQs if you have any question regading our services. It will help you find almost
+                            You’re welcome to ask us a question about anything. Before you write, please see
+                            FAQs if you have any question regarding our services. It might help you to find almost
                             every answer you want from us. Please, click on FAQ for your queries.
                         </label>
                         <div className={'image-icon-section'}>

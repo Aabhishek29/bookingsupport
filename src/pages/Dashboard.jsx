@@ -5,6 +5,9 @@ import {Link} from "react-router-dom";
 import KeyPointsView from "../components/keyPointsView";
 import CardView from "../components/CardView";
 import companyData from './companyData.json';
+import JoinUsBoard from "../components/joinUsBoard";
+import middle_image from '../assets/Centre_Image_bookingsupport.png';
+import BulletPointsView from "../components/BulletPointsView";
 
 const DashBoard = () => {
   return(
@@ -34,12 +37,18 @@ const DashBoard = () => {
 				</div>
 			</div>
 			<KeyPointsView />
-			{/*<div className={'join-now'}>*/}
-			{/*	<header className={'join-now-text'}>We’re always here to work for you</header>*/}
-			{/*	<div className={'join-now-div'}>*/}
-			{/*		<Link className={'join-now-link'} to={'form'}>Join Us</Link>*/}
-			{/*	</div>*/}
-			{/*</div>*/}
+			<JoinUsBoard context={'We’re always here to work for you'} />
+			<BulletPointsView />
+			<div className={'middle-section-site-name'}>
+				<div className={'middle-section-site-name-div'}>
+					<header style={{color : '#00A3FF'}}><i>BookingSupport</i></header>
+					<header style={{color : '#0039CA'}}><i>.in</i></header>
+				</div>
+			</div>
+			<div className={'middle-logo-image-section'}>
+				<img src={middle_image} alt={'something went wrong please refresh site'} />
+			</div>
+			<JoinUsBoard context={'It takes only few minutes...'} />
 			<div className={'dashboard-lower-division'}>
 				<header className={'dashboard-lower-division-header'}>Feedback</header>
 				<div className={'dashboard-lower-division-discription'}>

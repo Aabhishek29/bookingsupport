@@ -5,16 +5,12 @@ import  { IoLocationSharp } from 'react-icons/io5';
 import { AiTwotonePhone } from 'react-icons/ai';
 import { GrMail } from 'react-icons/gr';
 import { FaInstagram, FaFacebookSquare } from 'react-icons/fa';
+import JoinUsBoard from "./joinUsBoard";
 
 const Footer = () => {
     return(
         <div className={'footer'}>
-            <div className={'footer-navigator'}>
-                <header className={'footer-navigator-text'}>Get ready to work with us</header>
-                <div className={'footer-navigator-div'}>
-                    <Link className={'footer-navigator-join-link'} to={'form'}>Join Us</Link>
-                </div>
-            </div>
+            <JoinUsBoard context={'Get ready to work with us'} />
             <div className={'footer-div'}>
                 <div className={'footer-left-div'}>
                     <header className={'footer-div-header'}>BookingSupport.in</header>

@@ -1,6 +1,10 @@
 import React from 'react';
-import Icon from "../assets/iiicon.png";
-import Logo from "../assets/faq.png";
+import Icon from "../assets/about_us_i_section.png";
+import Logo from "../assets/about_us_intro_image.png";
+import JoinUsBoard from "../components/joinUsBoard";
+import './style/about.css'
+import companyData from "./companyData.json";
+import CardView from "../components/CardView";
 
 const About = () => {
     return (
@@ -10,9 +14,8 @@ const About = () => {
                 <div className={'faq-section'}>
                     <div className={'faq-introduction-div-description'}>
                         <label className={'faq-introduction-div-description-text'}>
-                            You’re welcome to shoot us a question about anything at all. Before you write, please
-                            see FAQs if you have any question regading our services. It will help you find almost
-                            every answer you want from us. Please, click on FAQ for your queries.
+                            Booking support is widely used and recommended by world class Hotel
+                            managers,Hoteliers,Revenue managers and Front office managers.
                         </label>
                         <div className={'image-icon-section'}>
                             <img className={'image-icon'} src={Icon} alt={'something went wrong'}/>
@@ -21,6 +24,47 @@ const About = () => {
                     <div className={'image-section'}>
                         <img className={'image-logo'} src={Logo} alt={'something went wrong'}/>
                     </div>
+                </div>
+            </div>
+            <div>
+                <div className={'advantage-block'}>
+                    <JoinUsBoard context={'Get the BookingSupport.in advantage'} />
+                </div>
+                <div className={'dashboard-cards'}>
+                    {companyData.data.map((data) => {
+                        return(
+                            <div style={{
+                                margin: 10,
+                            }}>
+                                <CardView description={data.description} owner={data.owner} />
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className={'dashboard-cards'}>
+                    {companyData.data.map((data) => {
+                        return(
+                            <div style={{
+                                margin: 10,
+                            }}>
+                                <CardView description={data.description} owner={data.owner} />
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className={'dashboard-cards'}>
+                    {companyData.data.map((data) => {
+                        return(
+                            <div style={{
+                                margin: 10,
+                            }}>
+                                <CardView description={data.description} owner={data.owner} />
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className={'advantage-block'}>
+                    <JoinUsBoard context={'Convinced? Sign up today!'} />
                 </div>
             </div>
         </div>

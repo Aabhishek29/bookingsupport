@@ -1,6 +1,5 @@
 import React from "react";
 import './style/Footer.css';
-import {Link} from "react-router-dom";
 import  { IoLocationSharp } from 'react-icons/io5';
 import { AiTwotonePhone } from 'react-icons/ai';
 import { GrMail } from 'react-icons/gr';

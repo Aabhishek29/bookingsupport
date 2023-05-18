@@ -1,0 +1,133 @@
+.form {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.form header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-header-section {
+    width: 100%;
+    font-size: 18px;
+    color: #282c34;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.hotel-input-tag {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#service-agreement-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content-section {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.content-form-section {
+    width: 60%;
+    padding: 0.5rem;
+    background: #eeeeee;
+}
+
+.form-label {
+    margin-top: 1rem;
+}
+
+.sign-section {
+    width: 100%;
+    display: inline-flex;
+}
+
+.owner-sign {
+    width: 50%;
+    text-align: center;
+}
+
+.owner-sign label {
+    font-size: 2.5rem;
+}
+.owner-sign header {
+    font-size: 1rem;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+.host-sign {
+    width: 50%;
+}
+
+.sig-canvas {
+    border: 2px dotted black;
+    width: 95%;
+    height: 200px;
+}
+
+.host-sign header {
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.owner-name-input {
+    display: flex;
+    justify-content: center;
+}
+
+.agreement-form-button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.agreement-form-button-section button {
+    padding: 0.5rem;
+    width: 60%;
+    background: #0087ff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .content-form-section {
+        width: 80%;
+        padding: 0.5rem;
+        background: #eeeeee;
+    }
+    .sign-section {
+        width: 100%;
+        display: block;
+    }
+    .owner-sign {
+        width: 100%;
+    }
+    .host-sign {
+        width: 100%;
+    }
+
+    .agreement-form-button-section button {
+        padding: 0.5rem;
+        width: 90%;
+        background: #0087ff;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}

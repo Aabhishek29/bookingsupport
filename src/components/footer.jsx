@@ -14,17 +14,13 @@ const Footer = () => {
                 <div className={'footer-left-div'}>
                     <header className={'footer-div-header'}>BookingSupport.in</header>
                     <p color={'#ddd'}>
-                        Find a new favicon to replace the default React favicon. Google
-                        Image search for an icon/emoji and save the image you like
-                        somewhere on your computer. It’s best to find an image that’s in
-                        .png format and has a transparent background. For this ‘To-Do List’
-                        example, I searched for a green checkmark icon, and saved it to my
-                        desktop. Find a new favicon to replace the default React favicon. Google
-                        Image search for an icon/emoji and save the image you like
-                        somewhere on your computer. It’s best to find an image that’s in
-                        .png format and has a transparent background. For this ‘To-Do List’
-                        example, I searched for a green checkmark icon, and saved it to my
-                        desktop
+                        Thank you for choosing our booking website for all your travel needs. Whether you're planning
+                        a vacation, business trip, or a quick getaway, we're here to make your booking experience
+                        seamless and enjoyable. With our user-friendly interface, extensive selection of accommodations,
+                        and competitive prices, you can easily find and reserve the perfect place to stay. Our dedicated
+                        team is committed to providing excellent customer service and ensuring your satisfaction throughout
+                        the entire booking process. Book with confidence and embark on your next adventure with us.
+                        Start exploring today and let us help you create unforgettable travel memories
                     </p>
                 </div>
                 <div className={'footer-right-div'}>

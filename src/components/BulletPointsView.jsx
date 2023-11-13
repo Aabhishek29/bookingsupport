@@ -13,29 +13,29 @@ const BulletPointsView = () => {
                     <div className={'bullet-points-list-container'}>
                         <div className={'bullet-points-list-point'}>
                             <FaHandPointRight fontSize={24} color="#1773fc"/>
-                            <label className={'bullet-points-list-text'}>First Point</label>
+                            <label className={'bullet-points-list-text'}>Wide Selection</label>
                         </div>
                         <div className={'bullet-points-list-point'}>
                             <FaHandPointRight fontSize={24} color="#1773fc"/>
-                            <label className={'bullet-points-list-text'}>First Point</label>
+                            <label className={'bullet-points-list-text'}>Competitive Prices</label>
                         </div>
                         <div className={'bullet-points-list-point'}>
                             <FaHandPointRight fontSize={24} color="#1773fc"/>
-                            <label className={'bullet-points-list-text'}>First Point</label>
+                            <label className={'bullet-points-list-text'}>User-Friendly Interface</label>
                         </div>
                     </div>
                     <div className={'bullet-points-list-container'}>
                         <div className={'bullet-points-list-point'}>
                             <FaHandPointRight fontSize={24} color="#1773fc"/>
-                            <label className={'bullet-points-list-text'}>First Point</label>
+                            <label className={'bullet-points-list-text'}>Flexible Booking Options </label>
                         </div>
                         <div className={'bullet-points-list-point'}>
                             <FaHandPointRight fontSize={24} color="#1773fc"/>
-                            <label className={'bullet-points-list-text'}>First Point</label>
+                            <label className={'bullet-points-list-text'}>Secure Payment Systems</label>
                         </div>
                         <div className={'bullet-points-list-point'}>
                             <FaHandPointRight fontSize={24} color="#1773fc"/>
-                            <label className={'bullet-points-list-text'}>First Point</label>
+                            <label className={'bullet-points-list-text'}>Customer Support</label>
                         </div>
                     </div>
                 </div>

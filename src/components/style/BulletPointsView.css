@@ -7,7 +7,7 @@
 }
 
 .bullet-points-section {
-    width: 85%;
+    width: 80%;
     background: white;
     padding: 1.5rem;
     border-radius: 10px;
@@ -16,6 +16,8 @@
 
 .bullet-points-section-header {
     width: 100%;
+    color: #282c34;
+    font-family: 'Dancing Script', serif;
     text-align: center;
     font-size: 32px;
     font-weight: bold;
@@ -24,12 +26,13 @@
 .bullet-points-list {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .bullet-points-list-container {
     width: 50%;
     margin-left: 5px;
-    text-align: center;
 }
 
 .bullet-points-list-point {
@@ -40,4 +43,20 @@
     font-weight: 400;
     font-size: 24px;
     margin: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .bullet-points-list {
+        display: block;
+    }
+    .bullet-points-list-container {
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    .bullet-points-list-text {
+        font-weight: 400;
+        font-size: 20px;
+        margin: 5px;
+    }
 }

@@ -6,7 +6,7 @@ import KeyPointsView from "../components/keyPointsView";
 import CardView from "../components/CardView";
 import companyData from './companyData.json';
 import JoinUsBoard from "../components/joinUsBoard";
-import middle_image from '../assets/Centre_Image_bookingsupport.png';
+import middle_image from '../assets/up.jpg';
 import BulletPointsView from "../components/BulletPointsView";
 
 const DashBoard = () => {

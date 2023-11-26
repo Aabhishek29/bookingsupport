@@ -7,7 +7,7 @@ class Form extends React.Component {
         super();
 
         let today = new Date(),
-            date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+            date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear()  ;
         this.setHotelName = this.setHotelName.bind(this);
         this.setOwnerName = this.setOwnerName.bind(this);
         this.sendPDF = this.sendPDF.bind(this);

@@ -14,13 +14,7 @@ const Footer = () => {
                 <div className={'footer-left-div'}>
                     <header className={'footer-div-header'}>BookingSupport.in</header>
                     <p color={'#ddd'}>
-                        Thank you for choosing our booking website for all your travel needs. Whether you're planning
-                        a vacation, business trip, or a quick getaway, we're here to make your booking experience
-                        seamless and enjoyable. With our user-friendly interface, extensive selection of accommodations,
-                        and competitive prices, you can easily find and reserve the perfect place to stay. Our dedicated
-                        team is committed to providing excellent customer service and ensuring your satisfaction throughout
-                        the entire booking process. Book with confidence and embark on your next adventure with us.
-                        Start exploring today and let us help you create unforgettable travel memories
+                    Thank you for choosing BookingSupport for your hotel contract needs. Our commitment is to facilitate seamless agreements, ensuring trust and satisfaction for both hotels and clients. Explore our extensive range of services and discover the ease of securing the best contracts for your hospitality ventures. Your success is our priority.
                     </p>
                 </div>
                 <div className={'footer-right-div'}>
@@ -41,11 +35,6 @@ const Footer = () => {
                                 padding: 2
                             }}>
                                 <label>+91 9548111813</label>
-                            </div>
-                            <div style={{
-                                padding: 2
-                            }}>
-                                <label>+91 1353152734</label>
                             </div>
                             <div style={{
                                 padding: 2

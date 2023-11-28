@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from 'react';
 import './style/Contact.css';
+import Icon from "../assets/contact_us.png";
+import Logo from "../assets/contact_us_intro.png";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -15,6 +17,24 @@ const Contact = () => {
 
     return(
         <div className={'contact'}>
+            <div className={'faq-introduction-div'}>
+                <header className={'faq-introduction-div-header'}>Send BookingSupport.in a Message</header>
+                <div className={'faq-section'}>
+                    <div className={'faq-introduction-div-description'}>
+                        <label className={'faq-introduction-div-description-text'}>
+                            You’re welcome to ask us a question about anything. Before you write, please see
+                            FAQs if you have any question regarding our services. It might help you to find almost
+                            every answer you want from us. Please, click on FAQ for your queries.
+                        </label>
+                        <div className={'image-icon-section'}>
+                            <img className={'image-icon'} src={Icon} alt={'something went wrong'}/>
+                        </div>
+                    </div>
+                    <div className={'image-section'}>
+                        <img className={'image-logo'} id={'contact-us-image'} src={Logo} alt={'something went wrong'}/>
+                    </div>
+                </div>
+            </div>
             <div className={'contact-us-header'}>
                 <header>Ask Anything</header>
             </div>

@@ -1,35 +1,20 @@
 import React from "react";
 import './style/Footer.css';
-import {Link} from "react-router-dom";
 import  { IoLocationSharp } from 'react-icons/io5';
 import { AiTwotonePhone } from 'react-icons/ai';
 import { GrMail } from 'react-icons/gr';
 import { FaInstagram, FaFacebookSquare } from 'react-icons/fa';
+import JoinUsBoard from "./joinUsBoard";
 
 const Footer = () => {
     return(
         <div className={'footer'}>
-            <div className={'footer-navigator'}>
-                <header className={'footer-navigator-text'}>Get ready to work with us</header>
-                <div className={'footer-navigator-div'}>
-                    <Link className={'footer-navigator-join-link'} to={'form'}>Join Us</Link>
-                </div>
-            </div>
+            <JoinUsBoard context={'Get ready to work with us'} />
             <div className={'footer-div'}>
                 <div className={'footer-left-div'}>
                     <header className={'footer-div-header'}>BookingSupport.in</header>
                     <p color={'#ddd'}>
-                        Find a new favicon to replace the default React favicon. Google
-                        Image search for an icon/emoji and save the image you like
-                        somewhere on your computer. It’s best to find an image that’s in
-                        .png format and has a transparent background. For this ‘To-Do List’
-                        example, I searched for a green checkmark icon, and saved it to my
-                        desktop. Find a new favicon to replace the default React favicon. Google
-                        Image search for an icon/emoji and save the image you like
-                        somewhere on your computer. It’s best to find an image that’s in
-                        .png format and has a transparent background. For this ‘To-Do List’
-                        example, I searched for a green checkmark icon, and saved it to my
-                        desktop
+                    Thank you for choosing BookingSupport for your hotel contract needs. Our commitment is to facilitate seamless agreements, ensuring trust and satisfaction for both hotels and clients. Explore our extensive range of services and discover the ease of securing the best contracts for your hospitality ventures. Your success is our priority.
                     </p>
                 </div>
                 <div className={'footer-right-div'}>
@@ -50,11 +35,6 @@ const Footer = () => {
                                 padding: 2
                             }}>
                                 <label>+91 9548111813</label>
-                            </div>
-                            <div style={{
-                                padding: 2
-                            }}>
-                                <label>+91 1353152734</label>
                             </div>
                             <div style={{
                                 padding: 2

@@ -45,7 +45,7 @@ class Form extends React.Component {
                 axios.post(url,payload)
                 .then((res)=>{
                     this.setState({isloading: true})
-                    alert(res.data.data);
+                    alert("Currently site under maintenance. please try again later");
                 }).catch((e)=>{
                     this.setState({isloading: true})
                     console.log(e)

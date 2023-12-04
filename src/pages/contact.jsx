@@ -38,6 +38,11 @@ const Contact = () => {
         .then((res)=>{
             setIsLoading(false)
             alert(res.data.data);
+            setEmail("");
+            setName("");
+            setMessage("")
+            setHotelName("")
+            setPhone("");
         }).catch((e)=>{
             setIsLoading(false);
             alert("Something went Wrong please try again later")

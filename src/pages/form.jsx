@@ -1,6 +1,9 @@
 import React from 'react';
 import './style/form.css';
 import SignatureCanvas from 'react-signature-canvas'
+import axios from 'axios';
+import html2canvas from 'html2canvas';
+
 
 class Form extends React.Component {
     constructor() {
@@ -14,13 +17,47 @@ class Form extends React.Component {
         this.state = {
             date: date,
             hotelName: "",
-            ownerName: ""
+            ownerName: "",
+            isError: false,
+            base64data: undefined,
+            isloading: false,
+            name: "",
+            email: ""
         };
     }
 
-    sendPDF = () => {
+    sendPDF = async () => {
         console.log("This submit button")
+        const input = document.getElementById('form');
+        await html2canvas(input)
+          .then((canvas) => {
+                const imgData = canvas.toDataURL('image/png');
+                console.log(imgData)
+                this.setState({base64data: imgData});
+                const url = "http://13.232.196.135:8000/api/sendFormToBookingSupport";
+                const blob = window.btoa(imgData);
+                const payload = {
+                    "name": this.state.name,
+                    "email": this.state.email,
+                    "base64": blob
+                }
+                console.log(payload);
+                axios.post(url,payload)
+                .then((res)=>{
+                    this.setState({isloading: true})
+                    alert(res.data.data);
+                }).catch((e)=>{
+                    this.setState({isloading: true})
+                    console.log(e)
+                    alert("Something went Wrong please try again later")
+                })
+            })
+              .catch((err)=> {
+            this.setState({isError: true});
+          });
+        
     }
+
     setHotelName = (value) => {
         this.setState({ hotelName: value});
     }
@@ -31,7 +68,7 @@ class Form extends React.Component {
     render() {
 
         return (
-            <div className={'form'}>
+            <div className={'form'} id='form'>
                 <header>Hotel/Guest House/Homestay/Apartment/Alternate Accommodation Name and Address*</header>
                 <div className={'form-header-section'}>
                     <input className={'hotel-input-tag'} type={'text'} placeholder={"Hotel Name"} value={this.state.hotelName}
@@ -167,9 +204,9 @@ class Form extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className={'agreement-form-button-section'}>
-                            <button onClick={this.sendPDF}>Please Click here to sign</button>
-                        </div>
+                        {/* <div className={'agreement-form-button-section'}> */}
+                            <button onClick={this.sendPDF} >Please Click here to sign</button>
+                        {/* </div> */}
                     </div>
                 </div>
             </div>

@@ -1,45 +1,64 @@
 {
   "data" : [
-    {
-      "id": "1",
-      "description": "you guys rock!\nBooking support has completely surpassed our expectations.",
-      "owner" : "Mr. Himanshu Goel, Owner\nHotel First, Agra"
-    },
-    {
-      "id": "2",
-      "description": "you guys rock!\nBooking support has completely surpassed our expectations.",
-      "owner" : "Mr. Himanshu Goel, Owner\nHotel First, Agra"
-    },
-    {
-      "id": "3",
-      "description": "you guys rock!\nBooking support has completely surpassed our expectations.",
-      "owner" : "Mr. Himanshu Goel, Owner\nHotel First, Agra"
-    }
+    [
+      {
+        "id": "1",
+        "description": "As a hotel owner, partnering with BookingSupport.in has been a game-changer.",
+        "owner" : "Mr. Mohit (Owner)\nHotel Suvidha Guest House, Varanasi"
+      },
+      {
+        "id": "2",
+        "description": "The extensive global reach of BookingSupport.in brings a steady stream of diverse guests, contributing significantly to our business.",
+        "owner" : "(Managing head),Hotel Dev Palace, Mussoorie"
+      },
+      {
+        "id": "3",
+        "description": "The site's interface is clean and the website is equally user-friendly, making it a reliable choice for spontaneous bookings.",
+        "owner" : "(Managing head)Hotel Shwetambara, Gangotri"
+      }
+    ],
+    [
+      {
+        "id": "1",
+        "description": "The platform's user-friendly extranet allows easy management of room availability and rates.",
+        "owner" : "(Manager)\nHotel Desert INN, Bujh"
+      },
+      {
+        "id": "2",
+        "description": "The secure booking system ensures accuracy, and the detailed property profiles enable us to showcase our amenities effectively. ",
+        "owner" : "(Manager)\nMridul Homestay, Madhya Pradesh"
+      },
+      {
+        "id": "3",
+        "description": "Partnering with BookingSupport.in has been a rewarding experience for our hotel.",
+        "owner" : "(Manager)\nRajwada Resort, Mathura"
+      }
+    ]
   ],
   "questionQuery" : [
     {
       "id" : "1",
-      "question": "Why should we work with bookingsupport.in?",
+      "question": "Discover the compelling reasons to collaborate with Bookingsupport.in?",
       "answer" : "Booking.com is world largest online travel agency. The volume of bookings generated on the platform is 50% more than that of other online travel agencies. To increase your guest volume by 50%, you should consider working with Booking.com."
     },
     {
       "id" : "2",
-      "question": "Why should we work with bookingsupport.in?",
+      "question": "Have you encountered challenges while partnering with Bookingsupport.in? ",
       "answer" : "Booking.com is world largest online travel agency. The volume of bookings generated on the platform is 50% more than that of other online travel agencies. To increase your guest volume by 50%, you should consider working with Booking.com."
     },
     {
       "id" : "3",
-      "question": "Why should we work with bookingsupport.in?",
+      "question": "What is your approach to partnering with Bookingsupport.in",
       "answer" : "Booking.com is world largest online travel agency. The volume of bookings generated on the platform is 50% more than that of other online travel agencies. To increase your guest volume by 50%, you should consider working with Booking.com."
     },
     {
       "id" : "4",
-      "question": "Why should we work with bookingsupport.in?",
+      "question": "While we currently handle our Bookingsupport.in management internally, what distinct advantages does working with our services offer?",
       "answer" : "Booking.com is world largest online travel agency. The volume of bookings generated on the platform is 50% more than that of other online travel agencies. To increase your guest volume by 50%, you should consider working with Booking.com."
     },
     {
       "id" : "5",
-      "question": "Why should we work with bookingsupport.in?",
+      "question": "Can I expect access to the extranet for my property?",
       "answer" : "Booking.com is world largest online travel agency. The volume of bookings generated on the platform is 50% more than that of other online travel agencies. To increase your guest volume by 50%, you should consider working with Booking.com."
     }
   ]

@@ -36,8 +36,8 @@
     font-family: 'Dancing Script', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 46px;
-    line-height: 43px;
+    font-size: 50px;
+    line-height: 24px;
     padding: 15px;
     color: #FFB800;
     margin: 10px;
@@ -49,20 +49,20 @@
 }
 
 .welcome-paragraph-div {
-    margin: 10px;
+    margin: 20px;
 }
 
 .welcome-paragraph {
-    font-family: 'Inika', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 30px;
+    line-height: 24px;
     color: #332C2C;
 }
 
 .welcome-button-desktop {
-    margin-top: 3.5rem;
+    margin-top: 5rem;
 }
 
 .know-more-button-desktop {
@@ -70,13 +70,15 @@
     padding: 15px;
     justify-content: center;
     text-align: center;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 18px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #welcome-icon {
-    width: 60%;
+    width: 50%;
     height: 100%;
 }
 
@@ -98,7 +100,7 @@
 
 .join-now-text {
     width: 70%;
-    font-size: 2.0rem;
+    font-size: 22px;
     color: #FFFFFF;
 }
 
@@ -136,7 +138,7 @@
 
 .dashboard-lower-division-discription {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .dashboard-lower-division-discription-text {
@@ -155,17 +157,17 @@
 }
 .middle-section-site-name-div {
     background: #CFE2E6;
-    padding: 2.5rem;
-    width: 75%;
+    padding: 1.5rem;
+    width: 60%;
     display: inline-flex;
     justify-content: center;
     box-shadow: 0px 4px 6px 2px #A5A5A5;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 .middle-section-site-name-div header {
     font-family: 'Luxurious Roman';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 4.5rem;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -196,21 +198,22 @@
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
-
     .welcome-text {
         font-size: 2.0rem;
         font-family: 'Inika', serif;
         font-style: normal;
-        line-height: 39px;
+        margin-top: 2rem;
+        line-height: 36px;
         font-weight: 400;
     }
 
     .welcome-text-site-name {
         font-family: 'Dancing Script', serif;
+        text-align: center;
         font-style: normal;
         font-weight: 700;
-        font-size: 2.0rem;
-        line-height: 43px;
+        font-size: 2.5rem;
+        line-height: 24px;
         color: #FFB800;
         text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     }
@@ -221,7 +224,7 @@
         text-align: center;
         height: auto;
         padding: 0px;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
     }
 
     #welcome-icon {
@@ -234,7 +237,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 42px;
+        line-height: 24px;
         color: #332C2C;
     }
 
@@ -246,17 +249,18 @@
         display: none;
     }
     .welcome-button-mobile {
-        margin-top: 2.5rem;
+        margin-top: 2.0rem;
+        margin-bottom: 2.0rem;
         display: inline-flex;
     }
     .know-more-button-mobile {
         background: #369FFF;
-        padding: 15px;
+        padding: 18px;
         justify-content: center;
         text-align: center;
         color: white;
         text-decoration: none;
-        border-radius: 10px;
+        border-radius: 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .dashboard-cards {
@@ -270,13 +274,13 @@
         display: inline-flex;
         justify-content: center;
         box-shadow: 0px 4px 6px 2px #A5A5A5;
-        border-radius: 10px;
+        border-radius: 15px;
     }
     .middle-section-site-name-div header {
         font-family: 'Luxurious Roman';
         font-style: normal;
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
 }

@@ -59,7 +59,7 @@ const DashBoard = () => {
 					<label className={'dashboard-lower-division-discription-text'}>BookingSupport.in</label>
 				</div>
 				<div className={'dashboard-cards'}>
-					{companyData.data.map((data) => {
+					{companyData.data[0].map((data) => {
 						return(
 							<div style={{
 								margin: 10,

@@ -8,7 +8,7 @@ import CardView from "../components/CardView";
 
 const About = () => {
     return (
-        <div className={'about'}>
+        <div className={'about'} style={{overflowX: 'hidden'}}>
             <div className={'faq-introduction-div'}>
                 <header className={'faq-introduction-div-header'}>About Us</header>
                 <div className={'faq-section'}>
@@ -55,7 +55,7 @@ const About = () => {
                         )
                     })}
                 </div>
-                <div className={'dashboard-cards'}>
+                {/* <div className={'dashboard-cards'}>
                     {companyData.data.map((data) => {
                         return(
                             <div style={{
@@ -65,7 +65,7 @@ const About = () => {
                             </div>
                         )
                     })}
-                </div>
+                </div> */}
                 <div className={'advantage-block'}>
                     <JoinUsBoard context={'Convinced? Sign up today!'} />
                 </div>

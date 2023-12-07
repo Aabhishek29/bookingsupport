@@ -28,7 +28,7 @@ const Faq = () => {
             </div>
             <div className={'faq-question-section'}>
                 <div>
-                    <header className={'question-first-section'}>FAQ for Booking support.com services</header>
+                    <header className={'question-first-section'}>FAQ for BookingSupport.in services</header>
                     <div>
                         {companyData.questionQuery.map((data) => {
                             return(
@@ -41,7 +41,7 @@ const Faq = () => {
                         })}
                     </div>
                 </div>
-                <div style={{
+                {/* <div style={{
                     marginTop: 50
                 }}>
                     <header className={'question-first-section'}>FAQs for online travel agency management services</header>
@@ -56,7 +56,7 @@ const Faq = () => {
                             )
                         })}
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

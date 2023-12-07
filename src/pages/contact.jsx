@@ -3,6 +3,9 @@ import { useState } from 'react';
 import './style/Contact.css';
 import Icon from "../assets/contact_us.png";
 import Logo from "../assets/contact_us_intro.png";
+import axios from "axios";
+import { Dots } from "react-activity";
+import "react-activity/dist/library.css";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -10,9 +13,40 @@ const Contact = () => {
     const [hotelName, setHotelName] = useState("");
     const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
+    const [isloading, setIsLoading] = useState(false);
 
-    const onFormSubmit = () => {
-        console.log("Hello world");
+    const onFormSubmit = async () => {
+        setIsLoading(true);
+        if(email === "" || name === "" || hotelName === "" || message === "" || phone === "" ){
+            alert("Please Enter proper details");
+            setIsLoading(false);
+            return
+        }
+        if(phone.length < 10 && phone.length > 10){
+            alert("Please Enter correct mobile number");
+            setIsLoading(false);
+            return
+        }
+        const payload = {
+            "name": name,
+            "email": email,
+            "issue": hotelName,
+            "phoneNumber": phone,
+            "msg": message
+        }
+        axios.post("http://13.232.196.135:8000/api/contact_us",payload)
+        .then((res)=>{
+            setIsLoading(false)
+            alert(res.data.data);
+            setEmail("");
+            setName("");
+            setMessage("")
+            setHotelName("")
+            setPhone("");
+        }).catch((e)=>{
+            setIsLoading(false);
+            alert("Something went Wrong please try again later")
+        })
     }
 
     return(
@@ -38,7 +72,7 @@ const Contact = () => {
             <div className={'contact-us-header'}>
                 <header>Ask Anything</header>
             </div>
-            <form onSubmit={onFormSubmit} className={'contact-us-form'}>
+            <div className={'contact-us-form'}>
                 <div className={'form-div'}>
                     <div className={'contact-us-input'}>
                         <div className={'contact-us-label'}>
@@ -78,8 +112,14 @@ const Contact = () => {
                     <textarea rows={10} className={'textarea-tag'} placeholder={"Message..."} value={message}
                            onChange={(e) => setMessage(e.target.value)} />
                 </div>
-                <button className={'form-submit-button'} type={'submit'} >Send Enquiry</button>
-            </form>
+                { isloading ? (
+                    <div style={{width: '100%', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>
+                        <Dots size={24} />
+                        
+                    </div>
+                )
+                 : (<button className={'form-submit-button'} onClick={onFormSubmit} >Send Enquiry</button>)}
+            </div>
         </div>
     )
 }

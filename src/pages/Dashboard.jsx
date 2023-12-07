@@ -11,7 +11,7 @@ import BulletPointsView from "../components/BulletPointsView";
 
 const DashBoard = () => {
   return(
-		<div className={'dashboard'}>
+		<div className={'dashboard'} style={{overflowX: 'hidden'}}>
 			<div className={'welcome-block'}>
 				<div className={'welcome-block-right'}>
 					<header className={'welcome-text'}>Try to work with</header>
@@ -58,8 +58,9 @@ const DashBoard = () => {
 					}}>Chooses </label>
 					<label className={'dashboard-lower-division-discription-text'}>BookingSupport.in</label>
 				</div>
-				<div className={'dashboard-cards'}>
-					{companyData.data.map((data) => {
+			</div>
+			<div className={'dashboard-cards'}>
+					{companyData.data[0].map((data) => {
 						return(
 							<div style={{
 								margin: 10,
@@ -69,7 +70,6 @@ const DashBoard = () => {
 						)
 					})}
 				</div>
-			</div>
 		</div>
   )
 }

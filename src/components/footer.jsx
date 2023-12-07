@@ -19,11 +19,11 @@ const Footer = () => {
                 </div>
                 <div className={'footer-right-div'}>
                     <header className={'footer-div-header'}>Contact Us</header>
-                    <div className={'footer-contact-us-div'}>
+                    <div className={'footer-contact-us-div'} style= {{lineHeight: 1}}>
                         <div className={'footer-contact-us-icon'}>
                             <IoLocationSharp stroke="white" color="white" fontSize={20}/>
                         </div>
-                        <label>doon Bussines park near isbt transport nagar dehradun</label>
+                        <label style={{fontSize: 16}}>Doon Bussines Park, Near ISBT, Transport Nagar Dehradun</label>
                     </div>
                     <br></br>
                     <div className={'footer-contact-us-div'}>
@@ -34,12 +34,7 @@ const Footer = () => {
                             <div style={{
                                 padding: 2
                             }}>
-                                <label>+91 9548111813</label>
-                            </div>
-                            <div style={{
-                                padding: 2
-                            }}>
-                                <label>+91 7251875859</label>
+                                <label style={{fontSize: 16}}>+91 9548111813, +91 7251875859</label>
                             </div>
                         </div>
                     </div>
@@ -48,7 +43,7 @@ const Footer = () => {
                         <div className={'footer-contact-us-icon'}>
                             <GrMail stroke="white" color="white" fontSize={20}/>
                         </div>
-                        <label color={'#ababab'}>sigupbooking@gmail.com</label>
+                        <label color={'#ababab'}>signupbooking@gmail.com</label>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ import BulletPointsView from "../components/BulletPointsView";
 
 const DashBoard = () => {
   return(
-		<div className={'dashboard'} style={{overflowX: 'hidden'}}>
+		<div className={'dashboard'}>
 			<div className={'welcome-block'}>
 				<div className={'welcome-block-right'}>
 					<header className={'welcome-text'}>Try to work with</header>

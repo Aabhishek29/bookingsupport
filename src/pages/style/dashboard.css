@@ -1,5 +1,6 @@
 .dashboard {
     background: #E0F0FF;
+    overflow-x: hidden;
 }
 
 .welcome-block {
@@ -188,6 +189,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .dashboard {
+        overflow-x: hidden;
+    }
     .welcome-block {
         width: 100%;
         display: block;

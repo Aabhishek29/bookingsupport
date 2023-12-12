@@ -23,7 +23,7 @@ const Footer = () => {
                         <div className={'footer-contact-us-icon'}>
                             <IoLocationSharp stroke="white" color="white" fontSize={20}/>
                         </div>
-                        <label style={{fontSize: 16}}>Doon Bussines Park, Near ISBT, Transport Nagar Dehradun</label>
+                        <label style={{fontSize: 16, marginTop: 7}}>Doon Bussines Park, Near ISBT, Transport Nagar Dehradun</label>
                     </div>
                     <br></br>
                     <div className={'footer-contact-us-div'}>
@@ -59,7 +59,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className={'footer-navigation-icons-div'}>
-                    <a href={'https://gmail.com'}>
+                    <a style={{cursor: 'pointer'}} onClick={()=> window.open('mailto:signupbooking@gmail.com',"_blank")}>
                         <GrMail stroke="white" color="white" fontSize={30}/>
                     </a>
                 </div>

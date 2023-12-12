@@ -58,8 +58,13 @@
     },
     {
       "id" : "5",
-      "question": "Can I expect access to the extranet for my property?",
-      "answer" : "Yes, absolutely! Access to the extranet for your property is part of our services. You'll have full access, allowing you to manage and optimize your property's information, bookings, and offerings efficiently and effectively."
+      "question": "Does Bookingsupport.in provide services 24*7?",
+      "answer" : "Bookingsupport.in provides you services 24*7. You can contact us anytime, our managing staff will help you out on Call and mail services. You should consider working with Booking.com."
+    },
+    {
+      "id": "6",
+      "question": "Why should we work with bookingsupport.in?",
+      "answer": "Bookingsupport.in works with world largest online travel agency. The volume of bookings generated on the platform is 50% more than that of other online travel agencies. To increase your guest volume by 50%, you should consider working with Bookingsupport.in."
     }
   ]
 }

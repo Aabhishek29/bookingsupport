@@ -3,6 +3,7 @@ import './style/form.css';
 import SignatureCanvas from 'react-signature-canvas'
 import axios from 'axios';
 import html2canvas from 'html2canvas';
+import { Dots } from 'react-activity';
 
 
 class Form extends React.Component {
@@ -28,6 +29,7 @@ class Form extends React.Component {
 
     sendPDF = async () => {
         console.log("This submit button")
+        this.setState({isloading: true})
         const input = document.getElementById('form');
         await html2canvas(input)
           .then((canvas) => {
@@ -50,11 +52,13 @@ class Form extends React.Component {
                     this.setState({isloading: true})
                     console.log(e)
                     alert("Something went Wrong please try again later")
+                    this.setState({isloading: false})
                 })
             })
               .catch((err)=> {
             this.setState({isError: true});
           });
+          this.setState({isloading: false})
         
     }
 
@@ -79,8 +83,8 @@ class Form extends React.Component {
                 <div className={'content-section'}>
                     <div className={'content-form-section'}>
                         <label>This "No Objection Certificate" or N.O.C is made effective as of Date- {this.state.date} between
-                            The Hotel <b>{this.state.hotelName}</b> and
-                            Booking support (A small unit of Booking.com) with head office in Doon Business park
+                            the Hotel <b>{this.state.hotelName}</b> and
+                            Booking support (GST:05FFRPR0647D1Z9) with head office in Doon Business park
                             Transport Nagar Dehradun,
                             Uttarakhand (248001).</label>
                         <div className={'form-label'}>
@@ -174,12 +178,12 @@ class Form extends React.Component {
                         </div>
                         <div className={'sign-section'}>
                             <div className={'owner-sign'}>
-                                <label>Ritick Panwar</label>
+                                <label>Ritik Panwar</label>
                                 <div>
                                     <header>Signature</header>
                                 </div>
                                 <div>
-                                    <header>Ritick Panwar</header>
+                                    <header>Ritik Panwar</header>
                                 </div>
                                 <div>
                                     <header>Head Onboarding Team</header>
@@ -204,9 +208,15 @@ class Form extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className={'agreement-form-button-section'}> */}
+                        { this.state.isloading ? (
+                    <div style={{width: '100%', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>
+                        <Dots size={24} />
+                    </div>
+                ) : (
+                        <div className={'agreement-form-button-section'}>
                             <button onClick={this.sendPDF} >Please Click here to sign</button>
-                        {/* </div> */}
+                        </div>
+                )}
                     </div>
                 </div>
             </div>

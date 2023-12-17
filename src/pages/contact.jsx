@@ -34,7 +34,7 @@ const Contact = () => {
             "phoneNumber": phone,
             "msg": message
         }
-        axios.post("http://13.232.196.135:8000/api/contact_us",payload)
+        axios.post("http://3.108.249.168/api/bookingsupport/contactUs",payload)
         .then((res)=>{
             setIsLoading(false)
             alert(res.data.data);

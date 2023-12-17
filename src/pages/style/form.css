@@ -103,6 +103,15 @@
     cursor: pointer;
 }
 
+.model {
+    position: absolute;
+    background-color: #eeeeee;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 900px) {
     .content-form-section {
         width: 80%;

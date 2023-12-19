@@ -23,11 +23,24 @@ class Form extends React.Component {
             base64data: undefined,
             isloading: false,
             email: "",
-            showModel: false
+            showModel: false,
+            errorMsg: ""
         };
+    }
+    isValidate(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
     }
 
     sendPDF = async () => {
+        if (this.state.hotelName === "") {
+            this.setState({errorMsg: "Please enter Hotel Name & Address"})
+            return;
+        }
+        if ( !this.isValidate(this.state.email)) {
+            this.setState({errorMsg: "Please enter valid email"})
+            return;
+        }
         console.log("This submit button")
         this.setState({ isloading: true})
         const input = document.getElementById('form');
@@ -64,10 +77,6 @@ class Form extends React.Component {
 
     }
 
-    handleSendForm = () => {
-        this.setState({ showModel: true })
-    }
-
     setHotelName = (value) => {
         this.setState({ hotelName: value });
     }
@@ -87,8 +96,12 @@ class Form extends React.Component {
                 <div className={'form'} id='form'>
                     <header>Hotel/Guest House/Homestay/Apartment/Alternate Accommodation Name and Address*</header>
                     <div className={'form-header-section'}>
-                        <input className={'hotel-input-tag'} type={'text'} placeholder={"Hotel Name"} value={this.state.hotelName}
+                        <input className={'hotel-input-tag'} type={'text'} placeholder={"Hotel Name & Address"} value={this.state.hotelName}
                             onChange={(e) => this.setHotelName(e.target.value)} />
+                    </div>
+                    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 25}}>
+                        <input className={'hotel-input-tag'} type={'email'} placeholder={"Please enter email for confirmation"} value={this.state.email}
+                            onChange={(e) => this.sendEmail(e.target.value)} />
                     </div>
                     <hr width={'60%'} style={{ marginTop: 20, marginBottom: 20 }} />
                     <header id={'service-agreement-header'}>SERVICE AGREEMENT</header>
@@ -220,12 +233,9 @@ class Form extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            {this.state.showModel && (
-                                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-                                    <input className={'hotel-input-tag'} type={'text'} placeholder={"Please enter email for confirmation"} value={this.state.email}
-                                        onChange={(e) => this.sendEmail(e.target.value)} />
-                                </div>
-                            )}
+                            {this.state.errorMsg !== "" && (<div style={{ width: '100%', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
+                            <label style={{width: '100%', color: 'red', fontWeight: 'bold' , justifyContent: 'center', alignItems: 'center'}}>{this.state.errorMsg}</label>
+                            </div>)}
                             {this.state.isloading ? (
                                 <div style={{ width: '100%', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
                                     <Dots size={24} />
@@ -233,13 +243,9 @@ class Form extends React.Component {
                             ) : (
                                 <div className={'agreement-form-button-section'}>
                                     <button onClick={()=> {
-                                        if(this.state.showModel){
+                                        this.setState({errorMsg: ""})
                                             this.sendPDF();
-                                        }else{
-                                            this.setState({ showModel: false })
-                                            this.handleSendForm();
-                                        }
-                                    }} >{ !this.state.showModel ? "Continue" : "Please Click here to sign"}</button>
+                                    }} >Please Click here to sign</button>
                                 </div>
                             )}
                         </div>

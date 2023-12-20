@@ -34,10 +34,10 @@ const Contact = () => {
             "phoneNumber": phone,
             "msg": message
         }
-        axios.post("http://3.108.249.168/api/bookingsupport/contactUs",payload)
+        axios.post("https://indzstudio.com/api/bookingsupport/contactUs",payload)
         .then((res)=>{
             setIsLoading(false)
-            alert(res.data.data);
+            alert("Thank you we will connect with you soon");
             setEmail("");
             setName("");
             setMessage("")

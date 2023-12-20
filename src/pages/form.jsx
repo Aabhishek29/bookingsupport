@@ -50,7 +50,7 @@ class Form extends React.Component {
                 console.log(imgData)
                 this.setState({ base64data: imgData });
                 // const url = "http://13.232.196.135:8000/api/sendFormToBookingSupport";
-                const url = "http://3.108.249.168/api/bookingsupport/form";
+                const url = "https://indzstudio.com/api/bookingsupport/form";
                 const payload = {
                     "name": this.state.ownerName,
                     "email": this.state.email,

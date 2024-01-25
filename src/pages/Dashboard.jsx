@@ -7,6 +7,9 @@ import CardView from "../components/CardView";
 import companyData from './companyData.json';
 import JoinUsBoard from "../components/joinUsBoard";
 import middle_image from '../assets/up.jpg';
+import booking_support_logo from '../assets/booking.jpg';
+import agoda_logo from '../assets/agoda.jpg';
+import price_logo from '../assets/price.jpg';
 import BulletPointsView from "../components/BulletPointsView";
 
 const DashBoard = () => {
@@ -41,14 +44,28 @@ const DashBoard = () => {
 			<BulletPointsView />
 			<div className={'middle-section-site-name'}>
 				<div className={'middle-section-site-name-div'}>
-					<header style={{color : '#00A3FF'}}><i>BookingSupport</i></header>
-					<header style={{color : '#0039CA'}}><i>.in</i></header>
+					<header style={{color : '#ededed'}}><i>BookingSupport</i></header>
+					<header style={{color : '#ededed'}}><i>.in</i></header>
 				</div>
 			</div>
 			<div className={'middle-logo-image-section'}>
 				<img src={middle_image} alt={'something went wrong please refresh site'} />
 			</div>
+			
 			<JoinUsBoard context={'It takes only few minutes...'} />
+			<div className={'middle-logo-image-section'}>
+			<div style={{width: '80%', backgroundColor: 'white', display: 'flex', justifyContent:'space-around', flexDirection: 'row', padding: 10, borderRadius: 40, marginTop: 80}}>
+				<div style={{width: '30%',alignItems:'center', justifyContent: 'center', textAlign: 'center',marginTop: 12}}>
+					<img style={{width: 200, height: 50}} src={booking_support_logo} alt={'something went wrong please refresh site'} />
+				</div>
+				<div style={{width: '30%',alignItems:'center', justifyContent: 'center', textAlign: 'center',marginTop: 12,}}>
+					<img style={{width: 170, height: 60}} src={agoda_logo} alt={'something went wrong please refresh site'} />
+				</div>
+				<div style={{width: '30%',alignItems:'center', justifyContent: 'center', textAlign: 'center',marginTop: 12}}>
+					<img style={{width: 200, height: 50}} src={price_logo} alt={'something went wrong please refresh site'} />
+				</div>
+			</div>
+			</div>
 			<div className={'dashboard-lower-division'}>
 				<header className={'dashboard-lower-division-header'}>Feedback</header>
 				<div className={'dashboard-lower-division-discription'}>
